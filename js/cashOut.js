@@ -13,7 +13,7 @@ document.getElementById("cash-out-btn").addEventListener("click", function(event
 
     if(cashOutPinNumber === "2345")
     {
-        console.log("you can cashout your money");
+        console.log("your money is reducing");
         
         const balance = document.getElementById("current-balance").innerText;
 
@@ -24,11 +24,11 @@ document.getElementById("cash-out-btn").addEventListener("click", function(event
         console.log(remainingBalance);
         // console.log(balance);
 
-        document.getElementById("current-balance").innerText = remainingBalance;
-
+        // document.getElementById("current-balance").innerText = remainingBalance;
+        balance.innerText = remainingBalance
     } 
     else
     {
-        alert("something is wrong!");
+        alert("Failed to cash out. Try again!");
     }
 })
